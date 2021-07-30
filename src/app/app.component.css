@@ -1,0 +1,27 @@
+.container {
+  margin-top: 30px;
+}
+#formElement{
+  position:relative;
+  width:45%;
+  margin:auto;
+  background-color:whitesmoke;
+  border-radius:5px;
+  top:30%
+}
+.btn{
+  border-radius:0px!important;
+}
+
+p {
+  color: blue;
+}
+.col-xs-12{
+  padding:40px!important;
+}
+input{
+  border-radius:0px
+}
+label{
+  font-weight:bold;
+}

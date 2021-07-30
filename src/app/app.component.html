@@ -1,0 +1,45 @@
+<div class="container">
+  <form id="formElement">
+  <div class="row">
+   
+    <div class="col-xs-12" >
+      
+      <h2 style="text-align:center;">Todos</h2>
+      <label>Todo Title <span style="color:red;">*</span></label>
+      <input type="text" class="form-control" [(ngModel)]="newTodoName" required>
+      <br>
+      <label>Todo Description <span style="color:red;">*</span></label>
+      <textarea type="text" class="form-control" [(ngModel)]="newTodoDesc" required></textarea>
+      <br>
+      <button
+        class="btn btn-success"
+        (click)="onAddTodo()" style="margin-right: 20px;">Add Todo</button>
+        <button
+        class="btn btn-danger"
+        (click)="onRemoveTodo()" >Remove Todo</button>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="card">        
+     
+        <div class="card-header">
+          {{ localItem }}
+        
+        </div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            
+            <p><em style="color: green">
+              {{ localItem1}}
+             
+            </em></p> 
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+</div>
+
